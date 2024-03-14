@@ -1,0 +1,18 @@
+{
+  "name": "satpro-hub/jwt-client",
+  "description": "jwt-client for api services, validate jwt token",
+  "type": "library",
+  "keywords": [
+    "jwt-client",
+    "gresm"
+  ],
+  "license": "MIT",
+  "require": {
+    "php": "^7.4|^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SatproHub\\JwtClient\\": "src/"
+    }
+  }
+}
