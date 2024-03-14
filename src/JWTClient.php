@@ -1,6 +1,6 @@
 <?php
 
-namespace Satpro\JwtClient;
+namespace Satpro\JWTClient;
 class JWTClient
 {
     public function __construct()
