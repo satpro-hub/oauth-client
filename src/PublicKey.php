@@ -9,7 +9,7 @@ class PublicKey
 
     public static function keyPath()
     {
-        return app('path.storage') . '/oauth-public3.key';
+        return app('path.storage') . '/oauth-public.key';
     }
 
     public static function getKey()
