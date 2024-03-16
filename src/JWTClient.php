@@ -3,7 +3,6 @@
 namespace Satpro\JWTClient;
 class JWTClient
 {
-    private static $expires_in = 3600;
     private static $algorithm = OPENSSL_ALGO_SHA256;
     private static $payload = null;
     public static $validationErrors = [];
@@ -31,11 +30,6 @@ class JWTClient
         return base64_decode(str_pad(strtr($data, '-_', '+/'), strlen($data) % 4, '=', STR_PAD_RIGHT));
     }
 
-    private static function publicKey()
-    {
-        return file_get_contents(app('path.storage') . '/oauth-public.key');
-    }
-
     /**
      * Валидация токена, функция для middleWare
      * @param $authorization_h
@@ -54,7 +48,7 @@ class JWTClient
 
             self::$payload = json_decode(self::base64_url_decode($token[1]), true);
 
-            $ok = openssl_verify($token[0] . "." . $token[1], self::base64_url_decode($token[2] ?? null), self::publicKey(), self::$algorithm);
+            $ok = openssl_verify($token[0] . "." . $token[1], self::base64_url_decode($token[2] ?? null), PublicKey::getKey(), self::$algorithm);
             if ($ok == 1) {
                 if (self::$payload["exp"] < time()) {
                     self::addValidationErrors(['token has expired']);
