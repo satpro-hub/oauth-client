@@ -22,7 +22,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Satpro\\OAuthClient\\OAuthClientServiceProvider"
+                "OAuthClientServiceProvider"
             ]
         }
     }
