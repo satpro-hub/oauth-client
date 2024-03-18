@@ -1,6 +1,6 @@
 <?php
 
-namespace Satpro\JWTClient\Exceptions;
+namespace Satpro\OAuthClient\Exceptions;
 
 
 class PublicKeyException

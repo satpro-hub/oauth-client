@@ -1,6 +1,6 @@
 <?php
 
-namespace Satpro\JWTClient;
+namespace Satpro\OAuthClient;
 
 use Illuminate\Support\Facades\Storage;
 

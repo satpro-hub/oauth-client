@@ -1,9 +1,9 @@
 {
-    "name": "satpro-hub/jwt-client",
-    "description": "jwt-client for api services, validate jwt token",
+    "name": "satpro-hub/oauth-client",
+    "description": "OAuthClient for api services, validate jwt token",
     "type": "library",
     "keywords": [
-        "jwt-client",
+        "oauth-client",
         "gresm"
     ],
     "license": "MIT",
@@ -13,13 +13,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Satpro\\JWTClient\\": "src/"
+            "Satpro\\OAuthClient\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Satpro\\JWTClient\\JWTClientServiceProvider"
+                "Satpro\\OAuthClient\\OAuthClientServiceProvider"
             ]
         }
     }

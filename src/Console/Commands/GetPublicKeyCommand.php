@@ -1,9 +1,9 @@
 <?php
 
-namespace Satpro\JWTClient\Console\Commands;
+namespace Satpro\OAuthClient\Console\Commands;
 
 use Illuminate\Console\Command;
-use Satpro\JWTClient\Services\JWTService;
+use Satpro\OAuthClient\Services\JWTService;
 
 class GetPublicKeyCommand extends Command
 {
