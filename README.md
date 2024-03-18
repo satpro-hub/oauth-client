@@ -4,7 +4,7 @@
 <a href="https://packagist.org/packages/satpro-hub/jwt-client"><img src="https://poser.pugx.org/satpro-hub/jwt-client/license.svg" alt="License"></a>
 </p>
 
-## JWT-CLIENT
+## oauth-client
 
 ### Пакет для валидации JWT токена, позволяющий загружать публичный ключ с Oauth сервера
 

@@ -3,7 +3,7 @@
 namespace Satpro\OAuthClient\Console\Commands;
 
 use Illuminate\Console\Command;
-use Satpro\OAuthClient\Services\JWTService;
+use Satpro\OAuthClient\Services\OAuthService;
 
 class GetPublicKeyCommand extends Command
 {
@@ -26,6 +26,6 @@ class GetPublicKeyCommand extends Command
      */
     public function handle(): void
     {
-        JWTService::getPublicKey();
+        OAuthService::getPublicKey();
     }
 }

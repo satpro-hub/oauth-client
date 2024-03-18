@@ -8,7 +8,7 @@ use Satpro\OAuthClient\OAuthClient;
 use Satpro\OAuthClient\OAuthClientError;
 use Satpro\OAuthClient\OAuthUser;
 
-class OauthMiddleware
+class OAuthMiddleware
 {
     public function handle($request, Closure $next, ...$scopes)
     {
