@@ -11,7 +11,7 @@
 ### Установка:
 
 ```
-composer require satpro-hub/jwt-client
+composer require satpro-hub/oauth-client
 ```
 
 ##
