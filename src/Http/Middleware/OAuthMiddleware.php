@@ -14,7 +14,7 @@ class OAuthMiddleware
     {
         $authorization_h = $request->header('authorization') ?? null;
         $is_validated = OAuthClient::validateToken($authorization_h);
-        if ($is_validated && empty(OAuthClient::$validationErrors)) {
+        if ($is_validated && empty(OAuthClientError::$validationErrors)) {
             //Auth::login(new OAuthUser(OAuthClient::getPayload()));;
             $request->attributes->set('payload', OAuthClient::getPayload());
             return $next($request);
